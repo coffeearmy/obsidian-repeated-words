@@ -1,0 +1,14 @@
+body {
+	--rw-color: #ffaa00;
+}
+
+.rw-repeat.rw-background {
+	background-color: color-mix(in srgb, var(--rw-color) 35%, transparent);
+	border-radius: 2px;
+}
+
+.rw-repeat.rw-underline {
+	text-decoration: underline wavy var(--rw-color);
+	text-decoration-skip-ink: none;
+	text-underline-offset: 3px;
+}

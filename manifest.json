@@ -1,0 +1,10 @@
+{
+	"id": "repeated-words",
+	"name": "Repeated Words",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Highlights words repeated too close together, in English and Spanish.",
+	"author": "Elisa De Gregorio",
+	"isDesktopOnly": false,
+	"fundingUrl": "https://buymeacoffee.com/coffeedrivendev"
+}
