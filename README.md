@@ -4,6 +4,10 @@ Obsidian plugin that highlights words repeated too close together while you writ
 
 Hover a highlighted word to see how far apart the repeats are.
 
+![An English note with repeated words (harbor, boats, counted, lantern) highlighted](docs/images/highlight.png)
+
+![A Spanish note in dark mode with repeated words (puerta, teatro, escenario) underlined with a wavy line](docs/images/underline.png)
+
 ## Settings
 
 - **Languages**: English and/or Spanish common words (the, with, para, como…) are never flagged.
@@ -14,6 +18,8 @@ Hover a highlighted word to see how far apart the repeats are.
 - **Ignore accents**: esta/está, como/cómo count as the same word.
 - **Ignored words**: your own list, such as character names.
 - **Style / Color**: background highlight or wavy underline.
+
+![The Repeated Words settings tab](docs/images/settings.png)
 
 Command: **Toggle repeated word highlighting** (assign a hotkey in Settings → Hotkeys).
 
@@ -27,6 +33,7 @@ npm install
 npm run dev     # watch build
 npm run build   # production build
 npm test        # detection unit tests
+npm run screenshots  # regenerate docs/images (macOS, needs Obsidian and Chrome)
 ```
 
 ## Install manually
