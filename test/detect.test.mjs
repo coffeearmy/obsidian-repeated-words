@@ -98,3 +98,14 @@ test("reports correct offsets", () => {
 	assert.deepEqual(r.map((x) => text.slice(x.from, x.to)), ["noche", "noche"]);
 	assert.equal(r[0].distance, 2);
 });
+
+test("tags are masked at line start, after spaces, and back to back, but not mid-word", () => {
+	const text = "#dragon story\nsee #dragon #lair here\nnot a#tag";
+	const masked = maskMarkdown(text);
+	assert.equal(masked.length, text.length);
+	assert.equal(masked.split("\n").length, 3);
+	assert.ok(!masked.includes("#dragon"));
+	assert.ok(!masked.includes("#lair"));
+	assert.ok(masked.includes("story") && masked.includes("here"));
+	assert.ok(masked.includes("a#tag"));
+});

@@ -12,7 +12,7 @@ Hover a highlighted word to see how far apart the repeats are.
 
 - **Languages**: English and/or Spanish common words (the, with, para, como…) are never flagged.
 - **Scope**: within N words, same sentence, or same paragraph.
-- **Distance**: max words between repeats (word scope).
+- **Distance**: max words between repeats (word distance scope only).
 - **Minimum word length**: shorter words are ignored.
 - **Match singular and plural**: casa/casas, flor/flores, house/houses.
 - **Ignore accents**: esta/está, como/cómo count as the same word.
@@ -33,6 +33,7 @@ npm install
 npm run dev     # watch build
 npm run build   # production build
 npm test        # detection unit tests
+npm run lint    # Obsidian's official lint rules (same as the plugin review)
 npm run screenshots  # regenerate docs/images (macOS, needs Obsidian and Chrome)
 ```
 

@@ -129,7 +129,7 @@ const INLINE: RegExp[] = [
 	/\]\([^)\n]*\)/g, // markdown link targets
 	/<[^>\n]+>/g, // html tags
 	/\bhttps?:\/\/[^\s)>\]]+/g, // bare urls
-	/(?<=^|\s)#[\p{L}\p{N}_/-]+/gmu, // tags
+	/(?:^|\s)#[\p{L}\p{N}_/-]+/gmu, // tags (no lookbehind: unsupported before iOS 16.4; the blanked space is harmless)
 ];
 
 function maskFences(text: string): string {

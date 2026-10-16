@@ -1,5 +1,5 @@
 [
 	{ "name": "highlight", "theme": "light", "size": [1100, 340] },
 	{ "name": "underline", "theme": "dark", "size": [1100, 270] },
-	{ "name": "settings", "theme": "light", "size": [1100, 1110] }
+	{ "name": "settings", "theme": "light", "size": [1100, 1140] }
 ]

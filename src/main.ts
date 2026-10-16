@@ -9,7 +9,7 @@ export default class RepeatedWordsPlugin extends Plugin {
 	private editorExtension: Extension[] = [];
 
 	async onload() {
-		this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+		this.settings = Object.assign({}, DEFAULT_SETTINGS, (await this.loadData()) as Partial<RepeatedWordsSettings> | null);
 		this.registerEditorExtension(this.editorExtension);
 		this.refresh();
 

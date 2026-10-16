@@ -12,3 +12,14 @@ body {
 	text-decoration-skip-ink: none;
 	text-underline-offset: 3px;
 }
+
+.rw-ignored-words {
+	width: 100%;
+}
+
+.rw-slider-value {
+	min-width: 2em;
+	text-align: right;
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+}
