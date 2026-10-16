@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-repeated-words",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Obsidian plugin that highlights words repeated too close together (English and Spanish).",
 	"main": "main.js",
 	"scripts": {
